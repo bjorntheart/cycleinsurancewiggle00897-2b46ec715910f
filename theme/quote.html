@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html data-wf-page="63cc6a8c0949d9439224c084" data-wf-site="63c16cf03ac0b580db75beb7" lang="en"><head><link rel="preconnect" crossorigin="true" href="https://assets.website-files.com">{%- seo seo -%}
+  <meta charset="utf-8">
+  
+  
+  
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="/assets/css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="/assets/css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="/assets/css/cycleinsurancewiggle00897-2b46ec715910f.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: ["Anton:regular", "Sora:300,regular,600"]
+        }
+      });
+    </script>
+  <script type="text/javascript">
+      ! function(o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+      }(window, document);
+    </script>
+  <link href="{{ settings.site.favicon | default: "/assets/images/favicon.png" }}" rel="shortcut icon" type="image/x-icon">
+  <link href="{{ settings.site.apple_touch_icon | default: "/assets/images/webclip.png" }}" rel="apple-touch-icon"><!--  Please keep this css code to improve the font quality -->
+  <style>
+      * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!--  Google Tag Manager  -->
+  <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-WRZ4W44');
+    </script>
+  <!--  End Google Tag Manager  -->
+{{ settings.site.header_additional_content }}{%- include "partials/_site-css-variables" -%}<style>.w-video.w-embed {
+            aspect-ratio: 16 / 9;
+        }</style></head>
+<body>
+  <div class="page-wrapper">
+    <div class="global-styles w-embed">
+      <style>
+          /* Get rid of top margin on first element in any rich text element */
+          .w-richtext> :not(div):first-child,
+          .w-richtext>div:first-child> :first-child {
+            margin-top: 0 !important;
+          }
+          /* Get rid of bottom margin on last element in any rich text element */
+          .w-richtext>:last-child,
+          .w-richtext ol li:last-child,
+          .w-richtext ul li:last-child {
+            margin-bottom: 0 !important;
+          }
+          /* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+          /*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+          /* Prevent all click and hover interaction with an element */
+          .pointer-events-off {
+            pointer-events: none;
+          }
+          /* Enables all click and hover interaction with an element */
+          .pointer-events-on {
+            pointer-events: auto;
+          }
+          /* Snippet enables you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/
+          .div-square::after {
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+          }
+          /*Hide focus outline for main content element*/
+          main:focus-visible {
+            outline: -webkit-focus-ring-color auto 0px;
+          }
+          /* Make sure containers never lose their center alignment*/
+          .container-medium,
+          .container-small,
+          .container-large {
+            margin-right: auto !important;
+            margin-left: auto !important;
+          }
+          /*Reset selects, buttons, and links styles*/
+          .w-input,
+          .w-select,
+          a {
+            color: inherit;
+            text-decoration: inherit;
+            font-size: inherit;
+          }
+          /*Apply "..." after 3 lines of text */
+          .text-style-3lines {
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+          }
+          /* Apply "..." after 2 lines of text */
+          .text-style-2lines {
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+          /* Apply "..." at 100% width */
+          .truncate-width {
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          /* Removes native scrollbar */
+          .no-scrollbar {
+            -ms-overflow-style: none; // IE 10+
+            overflow: -moz-scrollbars-none; // Firefox
+          }
+          .no-scrollbar::-webkit-scrollbar {
+            display: none; // Safari and Chrome
+          }
+          /* Adds inline flex display */
+          .display-inlineflex {
+            display: inline-flex;
+          }
+          /* These classes are never overwritten */
+          .hide {
+            display: none !important;
+          }
+          @media screen and (max-width: 991px) {
+            .hide,
+            .hide-tablet {
+              display: none !important;
+            }
+          }
+          @media screen and (max-width: 767px) {
+            .hide-mobile-landscape {
+              display: none !important;
+            }
+          }
+          @media screen and (max-width: 479px) {
+            .hide-mobile {
+              display: none !important;
+            }
+          }
+          .margin-0 {
+            margin: 0rem !important;
+          }
+          .padding-0 {
+            padding: 0rem !important;
+          }
+          .spacing-clean {
+            padding: 0rem !important;
+            margin: 0rem !important;
+          }
+          .margin-top {
+            margin-right: 0rem !important;
+            margin-bottom: 0rem !important;
+            margin-left: 0rem !important;
+          }
+          .padding-top {
+            padding-right: 0rem !important;
+            padding-bottom: 0rem !important;
+            padding-left: 0rem !important;
+          }
+          .margin-right {
+            margin-top: 0rem !important;
+            margin-bottom: 0rem !important;
+            margin-left: 0rem !important;
+          }
+          .padding-right {
+            padding-top: 0rem !important;
+            padding-bottom: 0rem !important;
+            padding-left: 0rem !important;
+          }
+          .margin-bottom {
+            margin-top: 0rem !important;
+            margin-right: 0rem !important;
+            margin-left: 0rem !important;
+          }
+          .padding-bottom {
+            padding-top: 0rem !important;
+            padding-right: 0rem !important;
+            padding-left: 0rem !important;
+          }
+          .margin-left {
+            margin-top: 0rem !important;
+            margin-right: 0rem !important;
+            margin-bottom: 0rem !important;
+          }
+          .padding-left {
+            padding-top: 0rem !important;
+            padding-right: 0rem !important;
+            padding-bottom: 0rem !important;
+          }
+          .margin-horizontal {
+            margin-top: 0rem !important;
+            margin-bottom: 0rem !important;
+          }
+          .padding-horizontal {
+            padding-top: 0rem !important;
+            padding-bottom: 0rem !important;
+          }
+          .margin-vertical {
+            margin-right: 0rem !important;
+            margin-left: 0rem !important;
+          }
+          .padding-vertical {
+            padding-right: 0rem !important;
+            padding-left: 0rem !important;
+          }
+        </style>
+    </div>
+    <main class="main-wrapper">
+      <div class="menu top wf-section">
+        <div class="primary-nav-bar">
+          <div class="nav-bar-centre">
+            <a href="{{ links.2f }}" class="brand w-inline-block"><img src="{{ images.4604db44.url }}" loading="eager" width="303" alt="{{ images.4604db44.alt | trim | escape }}" class="image"></a>
+            <a href="{{ links.23 }}" class="brand mobile w-inline-block"><img src="{{ images.16539366.url }}" loading="lazy" width="303" alt="{{ images.16539366.alt | trim | escape }}" class="image mobile"></a>
+            <div class="div-block-11">
+              <a href="{{ links.caad914 }}" class="navquote secondary hide-tablet w-inline-block">
+                <div class="text-block">{{ texts.-3055b6cc }}</div>
+              </a>
+              <a href="{{ links.23 }}" class="navquote w-inline-block">
+                <div class="text-block">{{ texts.-4ff7e5f4 }}</div>
+              </a>
+              <a href="{{ links.caad914 }}" class="navquote secondary w-inline-block">
+                <div class="text-block">{{ texts.39231529 }}</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="cover" class="uui-section_pricing02">
+        <div class="uui-page-padding-2">
+          <div class="container-medium max">
+            <div id="choose" class="uui-padding-vertical-xlarge">
+              <div class="uui-text-align-center">
+                <div class="uui-max-width-large align-center">
+                  <h2 class="heading-style-h2">{{ texts.-6953d692 }}</h2>
+                </div>
+              </div>
+              <div class="margin-small list">
+                <a href="{{ links.-7ee08e0f }}" class="quote-card w-inline-block">
+                  <div class="div-block-13">
+                    <div class="icon-quote">
+                      <div class="uui-icon-featured-outline-xlarge">
+                        <div class="uui-icon-1x1-xsmall w-embed"><svg width="22" height="22" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 1C5 0.447715 5.44772 0 6 0C6.55228 0 7 0.447716 7 1V5H11C11.5523 5 12 5.44772 12 6C12 6.55228 11.5523 7 11 7H7V11C7 11.5523 6.55228 12 6 12C5.44772 12 5 11.5523 5 11V7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447716 5 1 5H5V1Z" fill="#003349"></path>
+                          </svg></div>
+                      </div>
+                    </div>
+                    <div id="w-node-bda9b462-656a-2587-5d31-aadc7a3b68b9-9224c084" class="div-block-12">
+                      <div class="uui-space-xxsmall"></div>
+                      <h2 class="uui-heading-xsmall"><strong>{{ texts.7a0fd00d }}</strong>{{ texts.40e90390 }}<strong>{{ texts.911c21f }}</strong>{{ texts.103dad }}</h2>
+                      <div class="uui-text-size-medium">{{ texts.-5927bfeb }}</div>
+                    </div>
+                  </div>
+                  <div class="arrow quote"><img src="{{ images.-2ffea141.url }}" loading="lazy" alt="{{ images.-2ffea141.alt | trim | escape }}"></div>
+                </a>
+                <a href="{{ links.-7ee08e0f }}" class="quote-card w-inline-block">
+                  <div class="div-block-13">
+                    <div class="icon-quote">
+                      <div class="uui-icon-featured-outline-xlarge">
+                        <div class="uui-icon-1x1-xsmall w-embed"><svg width="24" height="22" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 0C10.4477 0 10 0.447715 10 1C10 1.55228 10.4477 2 11 2H12.1869L12.8119 5H7V4C7 3.44772 6.55129 3 5.99901 3H3C2.44772 3 2 3.44772 2 4C2 4.55228 2.44772 5 3 5H5V5.85994L4.09778 9.01773C1.80093 9.22118 0 11.1503 0 13.5C0 15.9853 2.01472 18 4.5 18C6.98528 18 9 15.9853 9 13.5C9 13.4572 8.9994 13.4145 8.99821 13.372L13.4693 8.15573L13.7213 9.36521C12.1206 10.0547 11 11.6465 11 13.5C11 15.9853 13.0147 18 15.5 18C17.9853 18 20 15.9853 20 13.5C20 11.078 18.0866 9.10293 15.6889 9.00389L13.979 0.796046C13.8824 0.332327 13.4737 0 13 0H11ZM14.1449 11.3987L14.521 13.204C14.6337 13.7446 15.1633 14.0916 15.704 13.979C16.2446 13.8663 16.5916 13.3367 16.479 12.796L16.121 11.0777C17.2013 11.3539 18 12.3337 18 13.5C18 14.8807 16.8807 16 15.5 16C14.1193 16 13 14.8807 13 13.5C13 12.6187 13.456 11.8439 14.1449 11.3987ZM8.30906 11.1028C7.79203 10.283 7.01763 9.64174 6.09931 9.29249L6.7543 7H11.8258L8.30906 11.1028ZM5.54609 11.2287C5.92479 11.4034 6.25235 11.6701 6.50018 12H5.32573L5.54609 11.2287ZM3.46789 11.2223L3.03848 12.7253C2.95227 13.027 3.01269 13.3517 3.20165 13.6022C3.39061 13.8527 3.68621 14 4 14H6.94999C6.71836 15.1411 5.70948 16 4.5 16C3.11929 16 2 14.8807 2 13.5C2 12.4873 2.60212 11.6153 3.46789 11.2223Z" fill="#003349"></path>
+                          </svg></div>
+                      </div>
+                    </div>
+                    <div id="w-node-e8bcf53f-97ce-b44f-8660-1ee00b00d1c1-9224c084" class="div-block-12">
+                      <h2 class="uui-heading-xsmall"><strong>{{ texts.63e6e2b2 }}</strong>{{ texts.-1d5d5994 }}<strong>{{ texts.910d93f }}</strong>{{ texts.103dad }}</h2>
+                      <div class="uui-space-xxsmall"></div>
+                      <div class="uui-text-size-medium">{{ texts.-1c73c935 }}</div>
+                    </div>
+                  </div>
+                  <div class="arrow quote"><img src="{{ images.-2ffea141.url }}" loading="lazy" alt="{{ images.-2ffea141.alt | trim | escape }}"></div>
+                </a>
+                <a href="{{ links.-7ee08e0f }}" class="quote-card w-inline-block">
+                  <div class="div-block-13">
+                    <div class="icon-quote">
+                      <div class="uui-icon-featured-outline-xlarge">
+                        <div class="uui-icon-1x1-xsmall w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00001 11C11.2092 11 13 9.20914 13 7C13 4.79086 11.2092 3 9.00001 3C6.79087 3 5.00001 4.79086 5.00001 7C5.00001 9.20914 6.79087 11 9.00001 11ZM17 13C18.6569 13 20 11.6568 20 10C20 8.34315 18.6569 7 17 7C15.3432 7 14 8.34315 14 10C14 11.6569 15.3432 13 17 13ZM22 19C22 19.5523 21.5523 20 21 20H16C16 20.5523 15.5523 21 15 21H3C2.44771 21 2 20.5523 2 20C2.00248 18.1515 2.73603 16.379 4.04057 15.0693C6.76889 12.3303 11.201 12.3216 13.9401 15.0499C14.8149 14.373 15.8896 14.0052 16.9958 14.0043C19.7572 14.0019 21.9977 16.2386 22 19Z" fill="#003349"></path>
+                          </svg></div>
+                      </div>
+                    </div>
+                    <div id="w-node-_637e2cfd-4135-87c0-8e32-59439fca5414-9224c084" class="div-block-12">
+                      <h2 class="uui-heading-xsmall"><strong>{{ texts.cb56d7 }}</strong>{{ texts.40e90390 }}<strong>{{ texts.18fc27a1 }}</strong>{{ texts.dfd }}</h2>
+                      <div class="uui-space-xxsmall"></div>
+                      <div class="uui-text-size-medium">{{ texts.599e9c7e }}</div>
+                    </div>
+                  </div>
+                  <div class="arrow quote"><img src="{{ images.-2ffea141.url }}" loading="lazy" alt="{{ images.-2ffea141.alt | trim | escape }}"></div>
+                </a>
+                <a href="{{ links.-7ee08e0f }}" class="max-width-large w-inline-block">
+                  <p class="text-size-small margin-top margin-small">{{ texts.-507c3e0c }}</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="heading2-section">
+        <div class="padding-global grey">
+          <div id="choose" class="uui-padding-vertical-xlarge">
+            <div class="uui-text-align-center">
+              <div class="uui-max-width-large align-center">
+                <h2 class="heading-style-h2 text-align-center">{{ texts.60a40eca }}</h2>
+              </div>
+            </div>
+            <div class="margin-small list">
+              <div class="quote-card white">
+                <div class="div-block-13">
+                  <div class="icon-quote">
+                    <div class="uui-icon-featured-outline-xlarge">
+                      <div class="uui-icon-1x1-xsmall w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00001 11C11.2092 11 13 9.20914 13 7C13 4.79086 11.2092 3 9.00001 3C6.79087 3 5.00001 4.79086 5.00001 7C5.00001 9.20914 6.79087 11 9.00001 11ZM17 13C18.6569 13 20 11.6568 20 10C20 8.34315 18.6569 7 17 7C15.3432 7 14 8.34315 14 10C14 11.6569 15.3432 13 17 13ZM22 19C22 19.5523 21.5523 20 21 20H16C16 20.5523 15.5523 21 15 21H3C2.44771 21 2 20.5523 2 20C2.00248 18.1515 2.73603 16.379 4.04057 15.0693C6.76889 12.3303 11.201 12.3216 13.9401 15.0499C14.8149 14.373 15.8896 14.0052 16.9958 14.0043C19.7572 14.0019 21.9977 16.2386 22 19Z" fill="#003349"></path>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div class="div-block-12">
+                    <div class="uui-space-xxsmall">
+                      <div>{{ texts.7e87367f }}</div>
+                    </div>
+                    <h2 class="uui-heading-xsmall"><strong>{{ texts.39231529 }}</strong></h2>
+                    <div class="uui-text-size-medium">{{ texts.-7056044f }}</div>
+                  </div>
+                </div>
+                <div class="div-block-12">
+                  <div class="uui-space-xxsmall"></div>
+                  <h2 class="uui-heading-xsmall"><strong>{{ texts.-3d36a8a9 }}</strong></h2>
+                  <div class="uui-text-size-medium">{{ texts.23cab043 }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="secondary-footer wf-section">
+        <div class="secondary-footer-wrapper">
+          <div class="secondary-footer-links">
+            <a href="{{ links.6d439fba }}" class="footer-link w-inline-block">
+              <div class="secondary-footer-link">{{ texts.-3fbde6f6 }}</div>
+            </a>
+            <a href="{{ links.40e6d924 }}" class="footer-link w-inline-block">
+              <div class="secondary-footer-link">{{ texts.63af666e }}</div>
+            </a>
+            <a href="{{ links.-539a1b57 }}" class="footer-link w-inline-block">
+              <div class="secondary-footer-link">{{ texts.4f912d2b }}</div>
+            </a>
+          </div>
+          <div class="secondary-footer-disclaimer">{{ texts.4394fcef }}<br><br>{{ texts.-237fac3b }}<br><br>{{ texts.63667f5c }}</div>
+          <div class="w-embed w-script">
+            <script type="text/javascript" async="" src="https://cdn.livechatinc.com/tracking.js"></script>
+            <script type="text/javascript">
+                window.__lc = window.__lc || {};
+                window.__lc.license = 8202611;
+                window.__lc.chat_between_groups = false;
+                (function() {
+                  var lc = document.createElement('script');
+                  lc.type = 'text/javascript';
+                  lc.async = true;
+                  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+                  var s = document.getElementsByTagName('script')[0];
+                  s.parentNode.insertBefore(lc, s);
+                })();
+              </script>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js" type="text/javascript" crossorigin="anonymous"></script>
+  <script src="/assets/js/webflow.js" type="text/javascript"></script><!--  Google Tag Manager (noscript)  -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRZ4W44" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!--  End Google Tag Manager (noscript)  -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://weblocks.io/library.js"></script>
+  <script src="https://weblocks.io/script-66-529.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js">
+    </script>
+  <script>
+      $(document).ready(function() {
+        var cookieName2 = 'modalClosed2';
+        if (typeof Cookies.get(cookieName2) !== 'undefined') {
+          $('#modal2').remove();
+        }
+        $('#close-modal2, #close-modal-x2').on('click', function() {
+          Cookies.set(cookieName2, 'ok', {
+            expires: 7
+          });
+        });
+      });
+    </script>
+
+<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}<script type="module">import*as UdeslyBanner from"https://cdn.jsdelivr.net/npm/udesly-ad-banner@0.0.1/loader/index.js";UdeslyBanner.defineCustomElements(),document.body.append(document.createElement("udesly-banner"));</script></body></html>
